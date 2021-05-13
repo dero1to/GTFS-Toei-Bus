@@ -9,19 +9,23 @@ services:
     tty: true
     volumes:
       - .:/root
+    links:
+      - mongo
   mongo:
     image: mongo
     restart: always
-    environment: 
+    environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
-    volumes: 
+    ports:
+      - 27017:27017
+    volumes:
       - ./mongo_db:/data/db
   mongo-express:
     image: mongo-express
     restart: always
-    ports: 
+    ports:
       - 8081:8081
-    environment: 
+    environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: root
