@@ -3,3 +3,4 @@ gtfs-realtime.proto
 .env
 .bash_history
 .vscode
+mongo_db/*
