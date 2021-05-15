@@ -1,6 +1,9 @@
+.DS_Store
 __pycache__
 gtfs-realtime.proto
 .env
 .bash_history
 .vscode
-mongo_db/*
+mongo_db/
+ToeiBus-GTFS
+ToeiBus-GTFS.zip
