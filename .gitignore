@@ -4,6 +4,8 @@ gtfs-realtime.proto
 .env
 .bash_history
 .vscode
-mongo_db/
+
 ToeiBus-GTFS
 ToeiBus-GTFS.zip
+docker/mongo_db/
+docker/mysql/data
