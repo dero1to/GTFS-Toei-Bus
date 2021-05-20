@@ -7,7 +7,11 @@
 ├── Makefile            ：makeコマンドの設定
 ├── README.md           ：はじめに読むドキュメント
 ├── docker-compose.yml  ：Dockerのイメージに関する設定
+├── .dockerignore       ：
+├── .gitignore          ：
+├── gtfs-mongo.py       ：GTFS-RTをMongoDBに保存
 ├── gtfs_rt_pb2.py      ：GTFS-RTの設定(Pythonに翻訳後)
+├── setup.py            ：GTFS-JPをMySQLに保存
 └── main.py             ：メインファイル
 ```
 
